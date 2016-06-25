@@ -13,4 +13,11 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    @IBAction func createAccountButtonPressed(_ sender: UIButton) {
+    }
+    
+    @IBAction func facebookButtonPressed(_ sender: UIButton) {
+        APIClient.sharedInstance.login()
+    }
 }

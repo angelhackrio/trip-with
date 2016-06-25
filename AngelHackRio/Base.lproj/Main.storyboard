@@ -1,11 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11129.15" systemVersion="16A201w" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Shk-ei-oY2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11129.15" systemVersion="16A201w" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="yhf-EY-hPA">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="O21-fq-80V">
+            <objects>
+                <viewController id="yhf-EY-hPA" customClass="LoginViewController" customModule="AngelHackRio" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Saz-rj-b6i"/>
+                        <viewControllerLayoutGuide type="bottom" id="GaD-nW-1e2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b3j-HQ-1B3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Phg-WQ-sYM">
+                                <frame key="frameInset" minX="104" minY="307" width="112" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="CreateAccount"/>
+                                <connections>
+                                    <action selector="createAccountButtonPressed:" destination="yhf-EY-hPA" eventType="touchUpInside" id="Qh2-F2-5jD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NU0-3W-Amu">
+                                <frame key="frameInset" minX="127" minY="269" width="67" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Facebook"/>
+                                <connections>
+                                    <action selector="facebookButtonPressed:" destination="yhf-EY-hPA" eventType="touchUpInside" id="cz1-2u-TS1"/>
+                                    <segue destination="Shk-ei-oY2" kind="show" id="aCn-z7-XnH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rnl-9Q-SUf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-708.75" y="101.40845070422536"/>
+        </scene>
         <!--Guides View Controller-->
         <scene sceneID="i0O-ew-rgW">
             <objects>
@@ -28,11 +65,30 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="bf8-FT-YKe" id="5y6-bo-OMs"/>
+                        <segue destination="fSZ-by-W3b" kind="show" id="8z3-ue-FRL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wRD-tU-1Ux" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="163.125" y="81.338028169014081"/>
+            <point key="canvasLocation" x="144" y="101"/>
+        </scene>
+        <!--Guide Detail View Controller-->
+        <scene sceneID="W5j-Gf-MOH">
+            <objects>
+                <viewController id="fSZ-by-W3b" customClass="GuideDetailViewController" customModule="AngelHackRio" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Sf4-l3-V1H"/>
+                        <viewControllerLayoutGuide type="bottom" id="dEA-Bj-wcz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5UQ-1G-NS2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OL5-Pf-Sb5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="891" y="101"/>
         </scene>
     </scenes>
 </document>
