@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class IntroViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +18,12 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func facebookButtonPressed(_ sender: UIButton) {
-        APIClient.sharedInstance.login()
+        APIClient.sharedInstance.login { (success) in
+            if success {
+                DispatchQueue.main.sync(execute: { 
+                    self.performSegue(withIdentifier: "toGuideVC", sender: self)
+                })
+            }
+        }
     }
 }

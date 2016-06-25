@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11129.15" systemVersion="16A201w" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="yhf-EY-hPA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11129.15" systemVersion="16A201w" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4cR-oO-BqK">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller-->
+        <!--Intro View Controller-->
         <scene sceneID="O21-fq-80V">
             <objects>
-                <viewController id="yhf-EY-hPA" customClass="LoginViewController" customModule="AngelHackRio" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="yhf-EY-hPA" customClass="IntroViewController" customModule="AngelHackRio" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Saz-rj-b6i"/>
                         <viewControllerLayoutGuide type="bottom" id="GaD-nW-1e2"/>
@@ -32,16 +32,19 @@
                                 <state key="normal" title="Facebook"/>
                                 <connections>
                                     <action selector="facebookButtonPressed:" destination="yhf-EY-hPA" eventType="touchUpInside" id="cz1-2u-TS1"/>
-                                    <segue destination="Shk-ei-oY2" kind="show" id="aCn-z7-XnH"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="bJk-Kw-atT"/>
+                    <connections>
+                        <segue destination="Shk-ei-oY2" kind="show" identifier="toGuideVC" id="Hi3-uV-hvN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rnl-9Q-SUf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-708.75" y="101.40845070422536"/>
+            <point key="canvasLocation" x="288.75" y="101.40845070422536"/>
         </scene>
         <!--Guides View Controller-->
         <scene sceneID="i0O-ew-rgW">
@@ -70,7 +73,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wRD-tU-1Ux" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="144" y="101"/>
+            <point key="canvasLocation" x="1140" y="100.35211267605634"/>
         </scene>
         <!--Guide Detail View Controller-->
         <scene sceneID="W5j-Gf-MOH">
@@ -88,7 +91,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OL5-Pf-Sb5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="891" y="101"/>
+            <point key="canvasLocation" x="1888.125" y="100.35211267605634"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="RiZ-5M-Fd1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="4cR-oO-BqK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0dm-qM-ZEw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="yhf-EY-hPA" kind="relationship" relationship="rootViewController" id="WMf-Ed-wp2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JIx-Tv-1kE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-708.75" y="101.40845070422536"/>
         </scene>
     </scenes>
 </document>

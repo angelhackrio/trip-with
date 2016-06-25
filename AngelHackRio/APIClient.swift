@@ -12,13 +12,14 @@ class APIClient {
 
     static let sharedInstance = APIClient()
 
-    func login() {
+    func login(completionHandler: (success: Bool) -> ()) {
         let url = "https://api-prj02.conectcar.com/api/Cep"
         let parameters = ["cep":"03679090","idAdesao":0]
         let request = clientURLRequest(path: url, params: parameters)
         post(request: request) { (success, data) in
             if success {
                 print(data)
+                completionHandler(success: true)
             }
         }
     }

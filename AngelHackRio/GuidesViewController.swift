@@ -17,7 +17,6 @@ class GuidesViewController: UIViewController {
         self.tableView.dataSource = self
         self.tableView.delegate = self
         self.tableView.register(UINib(nibName: "GuideTableViewCell", bundle: nil), forCellReuseIdentifier: "Cell")
-        APIClient.sharedInstance.login()
     }
 }
 

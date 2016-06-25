@@ -10,7 +10,7 @@
 		A21833B01D1F1A7D0019AAC3 /* GuideTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21833AF1D1F1A7D0019AAC3 /* GuideTableViewCell.swift */; };
 		A21833B21D1F1A9A0019AAC3 /* GuideTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A21833B11D1F1A9A0019AAC3 /* GuideTableViewCell.xib */; };
 		A21833B41D1F2D890019AAC3 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21833B31D1F2D890019AAC3 /* APIClient.swift */; };
-		A21833B61D1F2FF70019AAC3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21833B51D1F2FF70019AAC3 /* LoginViewController.swift */; };
+		A21833B61D1F2FF70019AAC3 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21833B51D1F2FF70019AAC3 /* IntroViewController.swift */; };
 		A24A91531D1F0A9200636000 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24A91521D1F0A9200636000 /* AppDelegate.swift */; };
 		A24A91581D1F0A9200636000 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A24A91561D1F0A9200636000 /* Main.storyboard */; };
 		A24A915A1D1F0A9200636000 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A24A91591D1F0A9200636000 /* Assets.xcassets */; };
@@ -24,7 +24,7 @@
 		A21833AF1D1F1A7D0019AAC3 /* GuideTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideTableViewCell.swift; sourceTree = "<group>"; };
 		A21833B11D1F1A9A0019AAC3 /* GuideTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GuideTableViewCell.xib; sourceTree = "<group>"; };
 		A21833B31D1F2D890019AAC3 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
-		A21833B51D1F2FF70019AAC3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A21833B51D1F2FF70019AAC3 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		A24A914F1D1F0A9200636000 /* AngelHackRio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AngelHackRio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A24A91521D1F0A9200636000 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A24A91571D1F0A9200636000 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		A21833AB1D1F1A130019AAC3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				A21833B51D1F2FF70019AAC3 /* LoginViewController.swift */,
+				A21833B51D1F2FF70019AAC3 /* IntroViewController.swift */,
 				A2F6EB981D1F419F008A69E9 /* SignupViewController.swift */,
 				A24A91651D1F0B4900636000 /* GuidesViewController.swift */,
 				A2F6EB9A1D1F42C8008A69E9 /* GuideDetailViewController.swift */,
@@ -201,7 +201,7 @@
 				A24A91661D1F0B4900636000 /* GuidesViewController.swift in Sources */,
 				A24A91531D1F0A9200636000 /* AppDelegate.swift in Sources */,
 				A21833B01D1F1A7D0019AAC3 /* GuideTableViewCell.swift in Sources */,
-				A21833B61D1F2FF70019AAC3 /* LoginViewController.swift in Sources */,
+				A21833B61D1F2FF70019AAC3 /* IntroViewController.swift in Sources */,
 				A21833B41D1F2D890019AAC3 /* APIClient.swift in Sources */,
 				A2F6EB9B1D1F42C8008A69E9 /* GuideDetailViewController.swift in Sources */,
 			);
