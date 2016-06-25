@@ -21,7 +21,7 @@ class IntroViewController: UIViewController {
         APIClient.sharedInstance.login { (success) in
             if success {
                 DispatchQueue.main.sync(execute: { 
-                    self.performSegue(withIdentifier: "toGuideVC", sender: self)
+                    self.performSegue(withIdentifier: "toSignupVC", sender: self)
                 })
             }
         }

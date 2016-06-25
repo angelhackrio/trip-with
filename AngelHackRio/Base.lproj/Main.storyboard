@@ -39,12 +39,52 @@
                     </view>
                     <navigationItem key="navigationItem" id="bJk-Kw-atT"/>
                     <connections>
-                        <segue destination="Shk-ei-oY2" kind="show" identifier="toGuideVC" id="Hi3-uV-hvN"/>
+                        <segue destination="Oqd-Vg-Jtf" kind="show" identifier="toSignupVC" id="6dv-l9-Thf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rnl-9Q-SUf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="288.75" y="101.40845070422536"/>
+            <point key="canvasLocation" x="-613" y="99"/>
+        </scene>
+        <!--Signup View Controller-->
+        <scene sceneID="J5i-gB-Gz0">
+            <objects>
+                <viewController id="Oqd-Vg-Jtf" customClass="SignupViewController" customModule="AngelHackRio" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="loY-Kp-Kj6"/>
+                        <viewControllerLayoutGuide type="bottom" id="bTp-li-K9l"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="q5Q-o0-Lqm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image-topplaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="gFr-fa-IzN">
+                                <frame key="frameInset" width="320" height="213"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="HXw-IU-6Jh">
+                                <frame key="frameInset" minX="100" minY="163" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kristina Romanova" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQi-UU-D6W">
+                                <frame key="frameInset" minX="83" minY="291" width="154" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="photoImageView" destination="HXw-IU-6Jh" id="goS-Ej-olK"/>
+                        <outlet property="topImageView" destination="gFr-fa-IzN" id="Y75-cy-3Qq"/>
+                        <segue destination="Shk-ei-oY2" kind="show" identifier="toGuideVC" id="z8G-Z7-9st"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qs2-yq-TpQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="166.875" y="97.183098591549296"/>
         </scene>
         <!--Guides View Controller-->
         <scene sceneID="i0O-ew-rgW">
@@ -69,6 +109,7 @@
                     <connections>
                         <outlet property="tableView" destination="bf8-FT-YKe" id="5y6-bo-OMs"/>
                         <segue destination="fSZ-by-W3b" kind="show" id="8z3-ue-FRL"/>
+                        <segue destination="mHL-PW-yXy" kind="show" identifier="toTourVC" id="Tgb-lV-tvf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wRD-tU-1Ux" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -88,10 +129,41 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="mHL-PW-yXy" kind="show" identifier="toTourVC" id="7D6-BN-51x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OL5-Pf-Sb5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1888.125" y="100.35211267605634"/>
+        </scene>
+        <!--Tour View Controller-->
+        <scene sceneID="JXO-Eh-qaP">
+            <objects>
+                <viewController id="mHL-PW-yXy" customClass="TourViewController" customModule="AngelHackRio" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wqc-EQ-bFp"/>
+                        <viewControllerLayoutGuide type="bottom" id="b2t-QJ-JKg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cRc-C8-Tjo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tNS-Cl-TXO">
+                                <frame key="frameInset" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="tNS-Cl-TXO" id="uyd-2X-D39"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WrF-1R-voy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1886.25" y="905.28169014084506"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="RiZ-5M-Fd1">
@@ -110,7 +182,14 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JIx-Tv-1kE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-708.75" y="101.40845070422536"/>
+            <point key="canvasLocation" x="-1309" y="100"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="image-placeholder" width="302" height="302"/>
+        <image name="image-topplaceholder" width="800" height="530"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Tgb-lV-tvf"/>
+    </inferredMetricsTieBreakers>
 </document>
