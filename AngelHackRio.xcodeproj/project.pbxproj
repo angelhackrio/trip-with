@@ -1,0 +1,304 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A24A91531D1F0A9200636000 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24A91521D1F0A9200636000 /* AppDelegate.swift */; };
+		A24A91551D1F0A9200636000 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24A91541D1F0A9200636000 /* ViewController.swift */; };
+		A24A91581D1F0A9200636000 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A24A91561D1F0A9200636000 /* Main.storyboard */; };
+		A24A915A1D1F0A9200636000 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A24A91591D1F0A9200636000 /* Assets.xcassets */; };
+		A24A915D1D1F0A9200636000 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A24A915B1D1F0A9200636000 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A24A914F1D1F0A9200636000 /* AngelHackRio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AngelHackRio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A24A91521D1F0A9200636000 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A24A91541D1F0A9200636000 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A24A91571D1F0A9200636000 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A24A91591D1F0A9200636000 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A24A915C1D1F0A9200636000 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A24A915E1D1F0A9200636000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A24A914C1D1F0A9200636000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A24A91461D1F0A9200636000 = {
+			isa = PBXGroup;
+			children = (
+				A24A91511D1F0A9200636000 /* AngelHackRio */,
+				A24A91501D1F0A9200636000 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A24A91501D1F0A9200636000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A24A914F1D1F0A9200636000 /* AngelHackRio.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A24A91511D1F0A9200636000 /* AngelHackRio */ = {
+			isa = PBXGroup;
+			children = (
+				A24A91521D1F0A9200636000 /* AppDelegate.swift */,
+				A24A91541D1F0A9200636000 /* ViewController.swift */,
+				A24A91561D1F0A9200636000 /* Main.storyboard */,
+				A24A91591D1F0A9200636000 /* Assets.xcassets */,
+				A24A915B1D1F0A9200636000 /* LaunchScreen.storyboard */,
+				A24A915E1D1F0A9200636000 /* Info.plist */,
+			);
+			path = AngelHackRio;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A24A914E1D1F0A9200636000 /* AngelHackRio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A24A91611D1F0A9200636000 /* Build configuration list for PBXNativeTarget "AngelHackRio" */;
+			buildPhases = (
+				A24A914B1D1F0A9200636000 /* Sources */,
+				A24A914C1D1F0A9200636000 /* Frameworks */,
+				A24A914D1D1F0A9200636000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AngelHackRio;
+			productName = AngelHackRio;
+			productReference = A24A914F1D1F0A9200636000 /* AngelHackRio.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A24A91471D1F0A9200636000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Jean Paul Marinho";
+				TargetAttributes = {
+					A24A914E1D1F0A9200636000 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 6S89TG6C9Q;
+						DevelopmentTeamName = "Jean Paul (Personal Team)";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A24A914A1D1F0A9200636000 /* Build configuration list for PBXProject "AngelHackRio" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A24A91461D1F0A9200636000;
+			productRefGroup = A24A91501D1F0A9200636000 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A24A914E1D1F0A9200636000 /* AngelHackRio */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A24A914D1D1F0A9200636000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A24A915D1D1F0A9200636000 /* LaunchScreen.storyboard in Resources */,
+				A24A915A1D1F0A9200636000 /* Assets.xcassets in Resources */,
+				A24A91581D1F0A9200636000 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A24A914B1D1F0A9200636000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A24A91551D1F0A9200636000 /* ViewController.swift in Sources */,
+				A24A91531D1F0A9200636000 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A24A91561D1F0A9200636000 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A24A91571D1F0A9200636000 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A24A915B1D1F0A9200636000 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A24A915C1D1F0A9200636000 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A24A915F1D1F0A9200636000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A24A91601D1F0A9200636000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A24A91621D1F0A9200636000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AngelHackRio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JeanPaulMarinho.AngelHackRio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A24A91631D1F0A9200636000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AngelHackRio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JeanPaulMarinho.AngelHackRio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A24A914A1D1F0A9200636000 /* Build configuration list for PBXProject "AngelHackRio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A24A915F1D1F0A9200636000 /* Debug */,
+				A24A91601D1F0A9200636000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A24A91611D1F0A9200636000 /* Build configuration list for PBXNativeTarget "AngelHackRio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A24A91621D1F0A9200636000 /* Debug */,
+				A24A91631D1F0A9200636000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A24A91471D1F0A9200636000 /* Project object */;
+}
