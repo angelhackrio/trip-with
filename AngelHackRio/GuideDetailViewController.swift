@@ -79,10 +79,10 @@ extension GuideDetailViewController: UITableViewDataSource {
             let typeImage: UIImage? = UIImage(named: field)
             cell?.typeImageView.image = typeImage
             var valueText = ""
-            for element in (guide?.language)! {
-                valueText = valueText + "\(element),"
-            }
-            cell?.inputTextField.text = valueText
+//            for element in (guide?.language)! {
+//                valueText = valueText + "\(element),"
+//            }
+//            cell?.inputTextField.text = valueText
             return cell!
         case 2:
             reuseIdentifier = "CellTextView"

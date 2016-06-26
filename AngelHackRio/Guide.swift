@@ -47,7 +47,7 @@ public class Guide {
 		id = dictionary["id"] as? Int
 		name = dictionary["name"] as? String
 		photoURL = dictionary["photoURL"] as? String
-//		if (dictionary["language"] != nil) { language = Language.modelsFromDictionaryArray(dictionary["language"] as! NSArray) }
+//		if (dictionary["language"] != nil) { language = Language.modelsFromDictionaryArray(array: dictionary["language"] as! NSArray) }
 		if (dictionary["place"] != nil) { place = Place(dictionary: dictionary["place"] as! NSDictionary) }
 		stars = dictionary["stars"] as? Int
 		about = dictionary["about"] as? String
