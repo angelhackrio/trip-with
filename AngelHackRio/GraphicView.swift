@@ -26,7 +26,7 @@ class GraphicView: UIView {
         context!.saveGState()
         rectanglePath.addClip()
         context!.scale(x: 1, y: -1)
-        context!.draw(in: CGRect(x:10, y:950, width:backgroundImage.size.width, height:backgroundImage.size.height), byTiling: backgroundImage.cgImage!)
+        context!.draw(in: CGRect(x:10, y:1250, width:backgroundImage.size.width, height:backgroundImage.size.height), byTiling: backgroundImage.cgImage!)
         context!.restoreGState()
         context!.endTransparencyLayer()
         context!.restoreGState()

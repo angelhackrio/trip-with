@@ -11,8 +11,9 @@ import UIKit
 class GuidesViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var backButton: UIButton!
     var guidesArray: [Guide] = []
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.dataSource = self
@@ -26,6 +27,14 @@ class GuidesViewController: UIViewController {
                     })
             }
         }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let backButtonImage = UIImage(named: "image-back")
+        backButtonImage?.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+        self.backButton.setImage(backButtonImage, for: [])
+        self.backButton.tintColor = UIColor.lightGray()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {

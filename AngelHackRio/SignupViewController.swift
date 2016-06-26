@@ -13,6 +13,7 @@ class SignupViewController: UIViewController {
     @IBOutlet weak var topImageView: UIImageView!
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var nextButton: UIButton!
     var signupFieldsArray: [String] = []
 
     override func viewDidLoad() {
@@ -38,6 +39,7 @@ class SignupViewController: UIViewController {
         filterView.backgroundColor = UIColor(colorLiteralRed: 132/255.0, green: 220/255.0, blue: 244/255.0, alpha: 0.3)
         self.topImageView.addSubview(filterView)
         self.topImageView.setNeedsDisplay()
+        self.nextButton.layer.cornerRadius = self.nextButton.frame.size.height/2
     }
     
     @IBAction func nextButtonPressed(_ sender: UIButton) {

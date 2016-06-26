@@ -19,6 +19,7 @@ class GuideDetailViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var photoImage: UIImage?
     var topImage: UIImage?
+    @IBOutlet weak var backButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,6 +49,10 @@ class GuideDetailViewController: UIViewController {
         self.titleLabel.text = guide?.name!
         self.photoImageView.image = photoImage
         self.topImageView.image = topImage
+        let backButtonImage = UIImage(named: "image-back")
+        backButtonImage?.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+        self.backButton.setImage(backButtonImage, for: [])
+        self.backButton.tintColor = UIColor.white()
     }
     
     @IBAction func backButtonPressed(_ sender: UIButton) {
