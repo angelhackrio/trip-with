@@ -129,14 +129,14 @@
                         <outlet property="photoImageView" destination="HXw-IU-6Jh" id="K2X-YI-JuH"/>
                         <outlet property="tableView" destination="hfk-4u-MeY" id="KF0-9r-mLV"/>
                         <outlet property="topImageView" destination="gFr-fa-IzN" id="I3D-Rg-C2r"/>
-                        <segue destination="Shk-ei-oY2" kind="show" identifier="toGuideVC" id="z8G-Z7-9st"/>
+                        <segue destination="0kd-do-oID" kind="show" identifier="toGuideVC" id="z8G-Z7-9st"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qs2-yq-TpQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="166.875" y="97.183098591549296"/>
+            <point key="canvasLocation" x="185" y="98"/>
         </scene>
-        <!--Guides View Controller-->
+        <!--World-->
         <scene sceneID="i0O-ew-rgW">
             <objects>
                 <viewController id="Shk-ei-oY2" customClass="GuidesViewController" customModule="AngelHackRio" customModuleProvider="target" sceneMemberID="viewController">
@@ -171,9 +171,14 @@
                                     <action selector="backButtonPressed:" destination="Shk-ei-oY2" eventType="touchUpInside" id="qoJ-ba-mC9"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image-filter" translatesAutoresizingMaskIntoConstraints="NO" id="JQO-zw-5zg">
+                                <frame key="frameInset" minX="278" minY="27" width="26" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="World" image="icon-world" selectedImage="icon-world-filled" id="6yJ-Ub-v6X"/>
                     <connections>
                         <outlet property="backButton" destination="JVG-kF-qFa" id="Jgb-z0-x0x"/>
                         <outlet property="tableView" destination="bf8-FT-YKe" id="5y6-bo-OMs"/>
@@ -182,7 +187,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wRD-tU-1Ux" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1140" y="100.35211267605634"/>
+            <point key="canvasLocation" x="2191.875" y="100.35211267605634"/>
         </scene>
         <!--Guide Detail View Controller-->
         <scene sceneID="W5j-Gf-MOH">
@@ -257,7 +262,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OL5-Pf-Sb5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1888.125" y="100.35211267605634"/>
+            <point key="canvasLocation" x="2885.625" y="100.35211267605634"/>
+        </scene>
+        <!--Chat-->
+        <scene sceneID="8BR-TI-qtV">
+            <objects>
+                <viewController id="Chs-mm-Z9f" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="K8Q-wB-lyB"/>
+                        <viewControllerLayoutGuide type="bottom" id="DnS-b4-NOK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3Sd-TS-Q8i">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Chat" image="icon-speech" selectedImage="icon-speech-filled" id="4wZ-st-re3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SJ5-sa-CBQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1679" y="780"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="JXO-Eh-qaP">
@@ -281,7 +305,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WrF-1R-voy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1886.25" y="905.28169014084506"/>
+            <point key="canvasLocation" x="2517" y="849"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="RiZ-5M-Fd1">
@@ -302,11 +326,103 @@
             </objects>
             <point key="canvasLocation" x="-1309" y="100"/>
         </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="MZB-M0-N2A">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="0kd-do-oID" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="XHf-JW-txg">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Shk-ei-oY2" kind="relationship" relationship="viewControllers" id="3zG-rd-ue1"/>
+                        <segue destination="Chs-mm-Z9f" kind="relationship" relationship="viewControllers" id="oAK-Rw-X87"/>
+                        <segue destination="wkD-VN-gnh" kind="relationship" relationship="viewControllers" id="dlO-7v-7uc"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZSt-vj-uP4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1140" y="100.35211267605634"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="kNQ-kL-J67">
+            <objects>
+                <viewController id="wkD-VN-gnh" customClass="SignupViewController" customModule="AngelHackRio" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2qr-AK-OdQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="cRg-re-Nfu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RxB-1V-a38">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image-kombi" translatesAutoresizingMaskIntoConstraints="NO" id="qz2-v0-2Cp">
+                                <frame key="frameInset" width="320" height="213"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="OjY-Zy-bVi">
+                                <frame key="frameInset" minX="100" minY="163" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kristina Romanova" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWd-nA-jDE">
+                                <frame key="frameInset" minX="83" minY="291" width="154" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="t30-xX-uKw">
+                                <frame key="frameInset" minY="371" width="320" height="197"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20 years old" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CS8-IV-u3b">
+                                <frame key="frameInset" minX="116" minY="311" width="88" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <color key="textColor" red="0.92549019610000005" green="0.49803921569999998" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="739-ai-F91">
+                                <frame key="frameInset" minX="45" minY="335" width="230" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.4941176471" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="FIND SOMEONE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="wkD-VN-gnh" eventType="touchUpInside" id="kYG-xF-Rfv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="icon-user" selectedImage="icon-user-filled" id="zVL-eL-U4K"/>
+                    <connections>
+                        <outlet property="nextButton" destination="739-ai-F91" id="1cL-hP-jNM"/>
+                        <outlet property="photoImageView" destination="OjY-Zy-bVi" id="rhy-gR-w96"/>
+                        <outlet property="tableView" destination="t30-xX-uKw" id="6VU-vq-Fjj"/>
+                        <outlet property="topImageView" destination="qz2-v0-2Cp" id="rAV-8F-gRg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vg1-uC-bfq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="937" y="889"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="icon-speech" width="30" height="30"/>
+        <image name="icon-speech-filled" width="30" height="30"/>
+        <image name="icon-user" width="30" height="30"/>
+        <image name="icon-user-filled" width="30" height="30"/>
+        <image name="icon-world" width="30" height="30"/>
+        <image name="icon-world-filled" width="30" height="30"/>
         <image name="image-back" width="25" height="25"/>
         <image name="image-email" width="531" height="84"/>
         <image name="image-facebook" width="531" height="84"/>
+        <image name="image-filter" width="35" height="35"/>
         <image name="image-kombi" width="1600" height="1060"/>
         <image name="image-login" width="531" height="84"/>
         <image name="image-password" width="531" height="84"/>

@@ -22,6 +22,7 @@
 		A2989E801D1F8B4A00B07EA4 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989E7D1D1F8B4A00B07EA4 /* Place.swift */; };
 		A2989E811D1F8B4A00B07EA4 /* Recommendations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989E7E1D1F8B4A00B07EA4 /* Recommendations.swift */; };
 		A2989E831D1F967100B07EA4 /* GraphicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989E821D1F967100B07EA4 /* GraphicView.swift */; };
+		A2C00E961D200773002E4F5A /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C00E951D200773002E4F5A /* RootTabBarController.swift */; };
 		A2DEDA1B1D1F50180093365F /* SignupIconTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DEDA1A1D1F50180093365F /* SignupIconTableViewCell.swift */; };
 		A2DEDA1D1D1F50540093365F /* SignupIconTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2DEDA1C1D1F50540093365F /* SignupIconTableViewCell.xib */; };
 		A2DEDA1F1D1F52460093365F /* SignupFields.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2DEDA1E1D1F52460093365F /* SignupFields.plist */; };
@@ -52,6 +53,7 @@
 		A2989E7D1D1F8B4A00B07EA4 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		A2989E7E1D1F8B4A00B07EA4 /* Recommendations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recommendations.swift; sourceTree = "<group>"; };
 		A2989E821D1F967100B07EA4 /* GraphicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphicView.swift; sourceTree = "<group>"; };
+		A2C00E951D200773002E4F5A /* RootTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
 		A2DEDA1A1D1F50180093365F /* SignupIconTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupIconTableViewCell.swift; sourceTree = "<group>"; };
 		A2DEDA1C1D1F50540093365F /* SignupIconTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignupIconTableViewCell.xib; sourceTree = "<group>"; };
 		A2DEDA1E1D1F52460093365F /* SignupFields.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SignupFields.plist; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				A24A91651D1F0B4900636000 /* GuidesViewController.swift */,
 				A2F6EB9A1D1F42C8008A69E9 /* GuideDetailViewController.swift */,
 				A244764F1D1F480D0041FA65 /* TourViewController.swift */,
+				A2C00E951D200773002E4F5A /* RootTabBarController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				A24A91531D1F0A9200636000 /* AppDelegate.swift in Sources */,
 				A21833B01D1F1A7D0019AAC3 /* GuideTableViewCell.swift in Sources */,
 				A2989E811D1F8B4A00B07EA4 /* Recommendations.swift in Sources */,
+				A2C00E961D200773002E4F5A /* RootTabBarController.swift in Sources */,
 				A2989E831D1F967100B07EA4 /* GraphicView.swift in Sources */,
 				A2DEDA1B1D1F50180093365F /* SignupIconTableViewCell.swift in Sources */,
 				A2989E801D1F8B4A00B07EA4 /* Place.swift in Sources */,
