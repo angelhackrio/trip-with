@@ -21,6 +21,10 @@ class GuideDetailViewController: UIViewController {
     var topImage: UIImage?
     @IBOutlet weak var backButton: UIButton!
     
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.titleLabel.text = guide?.name!

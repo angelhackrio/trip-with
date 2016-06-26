@@ -16,6 +16,10 @@ class SignupViewController: UIViewController {
     @IBOutlet weak var nextButton: UIButton!
     var signupFieldsArray: [String] = []
 
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.dataSource = self

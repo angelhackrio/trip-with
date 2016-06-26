@@ -14,6 +14,10 @@ class IntroViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
+    }
+    
     @IBAction func createAccountButtonPressed(_ sender: UIButton) {
     }
     

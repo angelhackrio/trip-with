@@ -24,7 +24,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Phg-WQ-sYM">
-                                <frame key="frameInset" minX="35" minY="345" width="250" height="35"/>
+                                <frame key="frameInset" minX="35" minY="387" width="250" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="CreateAccount" image="image-login"/>
                                 <connections>
@@ -32,7 +32,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NU0-3W-Amu">
-                                <frame key="frameInset" minX="35" minY="388" width="250" height="35"/>
+                                <frame key="frameInset" minX="35" minY="486" width="250" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Facebook" image="image-facebook"/>
                                 <connections>
@@ -40,22 +40,22 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image-world" translatesAutoresizingMaskIntoConstraints="NO" id="7SZ-FB-PKe">
-                                <frame key="frameInset" minX="85" minY="28" width="150" height="135"/>
+                                <frame key="frameInset" minX="85" minY="86" width="150" height="135"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXX-mS-sKz">
-                                <frame key="frameInset" minX="108" minY="431" width="105" height="19"/>
+                                <frame key="frameInset" minX="108" minY="529" width="105" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Create account">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image-email" translatesAutoresizingMaskIntoConstraints="NO" id="KCb-pq-qdC">
-                                <frame key="frameInset" minX="16" minY="186" width="288" height="42"/>
+                                <frame key="frameInset" minX="16" minY="277" width="288" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image-password" translatesAutoresizingMaskIntoConstraints="NO" id="bPg-Ub-w2W">
-                                <frame key="frameInset" minX="16" minY="236" width="288" height="42"/>
+                                <frame key="frameInset" minX="16" minY="332" width="288" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -114,7 +114,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.92156862750000001" green="0.4941176471" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="NEXT">
+                                <state key="normal" title="FIND SOMEONE">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -289,7 +289,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="4cR-oO-BqK" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedTopBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0dm-qM-ZEw">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="0dm-qM-ZEw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
