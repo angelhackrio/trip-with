@@ -9,43 +9,18 @@
 import UIKit
 
 class TourViewController: UIViewController {
-
-    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.dataSource = self
-        self.tableView.delegate = self
-        self.tableView.register(UINib(nibName: "GuideTableViewCell", bundle: nil), forCellReuseIdentifier: "Cell")
-    }
-}
-
-
-
-extension TourViewController: UITableViewDataSource {
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 10
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        return cell
-    }
-}
-
-
-
-extension TourViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 250
-    }
-    
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 20
-        
+    @IBAction func itemButtonPressed(_ sender: UIButton) {
+        let vc = UIAlertController(title: "Sucesso!", message: "Aguarde a chegada de seu guia...", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default) { (UIAlertAction) in
+            self.navigationController?.popToRootViewController(animated: true)
+        }
+        vc.addAction(okAction)
+        self.present(vc, animated: true) { 
+        }
     }
 }

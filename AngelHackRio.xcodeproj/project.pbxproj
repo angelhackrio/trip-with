@@ -94,11 +94,11 @@
 				A2F6EB981D1F419F008A69E9 /* SignupViewController.swift */,
 				A24A91651D1F0B4900636000 /* GuidesViewController.swift */,
 				A2F6EB9A1D1F42C8008A69E9 /* GuideDetailViewController.swift */,
-				A244764F1D1F480D0041FA65 /* TourViewController.swift */,
 				A2C00E951D200773002E4F5A /* RootTabBarController.swift */,
 				A2C00E991D201645002E4F5A /* GuideMovieViewController.swift */,
 				A2C00E9B1D201AC8002E4F5A /* ProfileViewController.swift */,
 				A2C00E9F1D2022C7002E4F5A /* TagViewController.swift */,
+				A244764F1D1F480D0041FA65 /* TourViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";

@@ -20,7 +20,7 @@ class TagViewController: UIViewController {
         super.viewWillAppear(animated)
         self.inputTextField.font = UIFont.systemFont(ofSize: 11)
     }
-    
+        
     @IBAction func closeButtonPressed(_ sender: UIButton) {
         self.dismiss(animated: true) {
         }
