@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import AVFoundation
+import AVKit
 
 class GuideDetailViewController: UIViewController {
 
@@ -65,6 +67,21 @@ class GuideDetailViewController: UIViewController {
     
     @IBAction func requestButtonPressed(_ sender: UIButton) {
         self.performSegue(withIdentifier: "toTourVC", sender: nil)
+    }
+    
+    @IBAction func videoButtonPressed(_ sender: UIButton) {
+        let moviePath = Bundle.main().pathForResource("GuideVideo", ofType: "mp4")
+        if let path = moviePath {
+            let url = NSURL.fileURL(withPath: path)
+            let player = AVPlayer(url: url)
+            let playerViewController = AVPlayerViewController()
+            playerViewController.player = player
+            self.present(playerViewController, animated: true) {
+                if let validPlayer = playerViewController.player {
+                    validPlayer.play()
+                }
+            }
+        }
     }
 }
 

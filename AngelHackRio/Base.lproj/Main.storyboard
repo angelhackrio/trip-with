@@ -247,6 +247,14 @@
                                     <action selector="backButtonPressed:" destination="fSZ-by-W3b" eventType="touchUpInside" id="HrN-Iq-Qxz"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDT-lf-NfY">
+                                <frame key="frameInset" minX="278" minY="28" width="26" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="image-video"/>
+                                <connections>
+                                    <action selector="videoButtonPressed:" destination="fSZ-by-W3b" eventType="touchUpInside" id="cai-fh-mfb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -263,6 +271,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OL5-Pf-Sb5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2885.625" y="100.35211267605634"/>
+        </scene>
+        <!--Guide Movie View Controller-->
+        <scene sceneID="WY9-9b-mrf">
+            <objects>
+                <viewController id="xbo-Py-WIK" customClass="GuideMovieViewController" customModule="AngelHackRio" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QdX-pL-8Vv"/>
+                        <viewControllerLayoutGuide type="bottom" id="g4f-a9-kQJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="z0Y-jE-qsl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PH6-FP-Wbb">
+                                <frame key="frameInset" minY="184" width="320" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="movieView" destination="PH6-FP-Wbb" id="Qq5-pe-jw2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Ug-aM-hfy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3804.375" y="150"/>
         </scene>
         <!--Chat-->
         <scene sceneID="8BR-TI-qtV">
@@ -382,7 +418,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="t30-xX-uKw">
-                                <frame key="frameInset" minY="371" width="320" height="197"/>
+                                <frame key="frameInset" minY="336" width="320" height="232"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
@@ -393,8 +429,8 @@
                                 <color key="textColor" red="0.92549019610000005" green="0.49803921569999998" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="739-ai-F91">
-                                <frame key="frameInset" minX="45" minY="335" width="230" height="28"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LD4-Jw-jYn">
+                                <frame key="frameInset" minX="242" minY="221" width="62" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.92156862750000001" green="0.4941176471" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -402,7 +438,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="nextButtonPressed:" destination="wkD-VN-gnh" eventType="touchUpInside" id="kYG-xF-Rfv"/>
+                                    <action selector="nextButtonPressed:" destination="wkD-VN-gnh" eventType="touchUpInside" id="BaJ-m4-T8X"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -410,7 +446,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="icon-user" selectedImage="icon-user-filled" id="zVL-eL-U4K"/>
                     <connections>
-                        <outlet property="nextButton" destination="739-ai-F91" id="1cL-hP-jNM"/>
+                        <outlet property="nextButton" destination="LD4-Jw-jYn" id="MFr-zF-isT"/>
                         <outlet property="photoImageView" destination="OjY-Zy-bVi" id="rhy-gR-w96"/>
                         <outlet property="tableView" destination="t30-xX-uKw" id="6VU-vq-Fjj"/>
                         <outlet property="topImageView" destination="qz2-v0-2Cp" id="rAV-8F-gRg"/>
@@ -418,7 +454,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vg1-uC-bfq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="937" y="889"/>
+            <point key="canvasLocation" x="935.625" y="888.38028169014081"/>
         </scene>
     </scenes>
     <resources>
@@ -437,6 +473,7 @@
         <image name="image-password" width="531" height="84"/>
         <image name="image-placeholder" width="302" height="302"/>
         <image name="image-request" width="231" height="35"/>
+        <image name="image-video" width="30" height="30"/>
         <image name="image-world" width="175" height="157"/>
     </resources>
 </document>

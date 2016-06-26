@@ -23,6 +23,8 @@
 		A2989E811D1F8B4A00B07EA4 /* Recommendations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989E7E1D1F8B4A00B07EA4 /* Recommendations.swift */; };
 		A2989E831D1F967100B07EA4 /* GraphicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989E821D1F967100B07EA4 /* GraphicView.swift */; };
 		A2C00E961D200773002E4F5A /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C00E951D200773002E4F5A /* RootTabBarController.swift */; };
+		A2C00E981D20150A002E4F5A /* GuideVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A2C00E971D20150A002E4F5A /* GuideVideo.mp4 */; };
+		A2C00E9A1D201645002E4F5A /* GuideMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C00E991D201645002E4F5A /* GuideMovieViewController.swift */; };
 		A2DEDA1B1D1F50180093365F /* SignupIconTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DEDA1A1D1F50180093365F /* SignupIconTableViewCell.swift */; };
 		A2DEDA1D1D1F50540093365F /* SignupIconTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2DEDA1C1D1F50540093365F /* SignupIconTableViewCell.xib */; };
 		A2DEDA1F1D1F52460093365F /* SignupFields.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2DEDA1E1D1F52460093365F /* SignupFields.plist */; };
@@ -54,6 +56,8 @@
 		A2989E7E1D1F8B4A00B07EA4 /* Recommendations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recommendations.swift; sourceTree = "<group>"; };
 		A2989E821D1F967100B07EA4 /* GraphicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphicView.swift; sourceTree = "<group>"; };
 		A2C00E951D200773002E4F5A /* RootTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
+		A2C00E971D20150A002E4F5A /* GuideVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = GuideVideo.mp4; sourceTree = "<group>"; };
+		A2C00E991D201645002E4F5A /* GuideMovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideMovieViewController.swift; sourceTree = "<group>"; };
 		A2DEDA1A1D1F50180093365F /* SignupIconTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupIconTableViewCell.swift; sourceTree = "<group>"; };
 		A2DEDA1C1D1F50540093365F /* SignupIconTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignupIconTableViewCell.xib; sourceTree = "<group>"; };
 		A2DEDA1E1D1F52460093365F /* SignupFields.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SignupFields.plist; sourceTree = "<group>"; };
@@ -86,6 +90,7 @@
 				A2F6EB9A1D1F42C8008A69E9 /* GuideDetailViewController.swift */,
 				A244764F1D1F480D0041FA65 /* TourViewController.swift */,
 				A2C00E951D200773002E4F5A /* RootTabBarController.swift */,
+				A2C00E991D201645002E4F5A /* GuideMovieViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -157,6 +162,7 @@
 		A24A91641D1F0AA300636000 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A2C00E971D20150A002E4F5A /* GuideVideo.mp4 */,
 				A24A14281D1FADAF00C11ADC /* Claudia.otf */,
 				A24A91521D1F0A9200636000 /* AppDelegate.swift */,
 				A24A91591D1F0A9200636000 /* Assets.xcassets */,
@@ -237,6 +243,7 @@
 				A2DEDA291D1F64820093365F /* SignupTextViewTableViewCell.xib in Resources */,
 				A24A91581D1F0A9200636000 /* Main.storyboard in Resources */,
 				A2DEDA1F1D1F52460093365F /* SignupFields.plist in Resources */,
+				A2C00E981D20150A002E4F5A /* GuideVideo.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +266,7 @@
 				A24476501D1F480D0041FA65 /* TourViewController.swift in Sources */,
 				A2DEDA231D1F62B20093365F /* SignupLabelTableViewCell.swift in Sources */,
 				A2989E7F1D1F8B4A00B07EA4 /* Guide.swift in Sources */,
+				A2C00E9A1D201645002E4F5A /* GuideMovieViewController.swift in Sources */,
 				A21833B61D1F2FF70019AAC3 /* IntroViewController.swift in Sources */,
 				A21833B41D1F2D890019AAC3 /* APIClient.swift in Sources */,
 				A2DEDA271D1F64720093365F /* SignupTextViewTableViewCell.swift in Sources */,
