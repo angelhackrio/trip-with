@@ -17,6 +17,10 @@
 		A24A915A1D1F0A9200636000 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A24A91591D1F0A9200636000 /* Assets.xcassets */; };
 		A24A915D1D1F0A9200636000 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A24A915B1D1F0A9200636000 /* LaunchScreen.storyboard */; };
 		A24A91661D1F0B4900636000 /* GuidesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24A91651D1F0B4900636000 /* GuidesViewController.swift */; };
+		A2DEDA1B1D1F50180093365F /* SignupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DEDA1A1D1F50180093365F /* SignupTableViewCell.swift */; };
+		A2DEDA1D1D1F50540093365F /* SignupTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2DEDA1C1D1F50540093365F /* SignupTableViewCell.xib */; };
+		A2DEDA1F1D1F52460093365F /* SignupFields.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2DEDA1E1D1F52460093365F /* SignupFields.plist */; };
+		A2DEDA211D1F55EA0093365F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DEDA201D1F55EA0093365F /* User.swift */; };
 		A2F6EB991D1F419F008A69E9 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F6EB981D1F419F008A69E9 /* SignupViewController.swift */; };
 		A2F6EB9B1D1F42C8008A69E9 /* GuideDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F6EB9A1D1F42C8008A69E9 /* GuideDetailViewController.swift */; };
 /* End PBXBuildFile section */
@@ -34,6 +38,10 @@
 		A24A915C1D1F0A9200636000 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A24A915E1D1F0A9200636000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A24A91651D1F0B4900636000 /* GuidesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuidesViewController.swift; sourceTree = "<group>"; };
+		A2DEDA1A1D1F50180093365F /* SignupTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupTableViewCell.swift; sourceTree = "<group>"; };
+		A2DEDA1C1D1F50540093365F /* SignupTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignupTableViewCell.xib; sourceTree = "<group>"; };
+		A2DEDA1E1D1F52460093365F /* SignupFields.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SignupFields.plist; sourceTree = "<group>"; };
+		A2DEDA201D1F55EA0093365F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A2F6EB981D1F419F008A69E9 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		A2F6EB9A1D1F42C8008A69E9 /* GuideDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				A21833B31D1F2D890019AAC3 /* APIClient.swift */,
+				A2DEDA201D1F55EA0093365F /* User.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -82,6 +91,8 @@
 			children = (
 				A21833AF1D1F1A7D0019AAC3 /* GuideTableViewCell.swift */,
 				A21833B11D1F1A9A0019AAC3 /* GuideTableViewCell.xib */,
+				A2DEDA1A1D1F50180093365F /* SignupTableViewCell.swift */,
+				A2DEDA1C1D1F50540093365F /* SignupTableViewCell.xib */,
 			);
 			name = "Reusable Cells";
 			sourceTree = "<group>";
@@ -121,6 +132,7 @@
 				A24A91591D1F0A9200636000 /* Assets.xcassets */,
 				A24A915B1D1F0A9200636000 /* LaunchScreen.storyboard */,
 				A24A915E1D1F0A9200636000 /* Info.plist */,
+				A2DEDA1E1D1F52460093365F /* SignupFields.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -187,9 +199,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A21833B21D1F1A9A0019AAC3 /* GuideTableViewCell.xib in Resources */,
+				A2DEDA1D1D1F50540093365F /* SignupTableViewCell.xib in Resources */,
 				A24A915D1D1F0A9200636000 /* LaunchScreen.storyboard in Resources */,
 				A24A915A1D1F0A9200636000 /* Assets.xcassets in Resources */,
 				A24A91581D1F0A9200636000 /* Main.storyboard in Resources */,
+				A2DEDA1F1D1F52460093365F /* SignupFields.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,9 +218,11 @@
 				A24A91661D1F0B4900636000 /* GuidesViewController.swift in Sources */,
 				A24A91531D1F0A9200636000 /* AppDelegate.swift in Sources */,
 				A21833B01D1F1A7D0019AAC3 /* GuideTableViewCell.swift in Sources */,
+				A2DEDA1B1D1F50180093365F /* SignupTableViewCell.swift in Sources */,
 				A24476501D1F480D0041FA65 /* TourViewController.swift in Sources */,
 				A21833B61D1F2FF70019AAC3 /* IntroViewController.swift in Sources */,
 				A21833B41D1F2D890019AAC3 /* APIClient.swift in Sources */,
+				A2DEDA211D1F55EA0093365F /* User.swift in Sources */,
 				A2F6EB9B1D1F42C8008A69E9 /* GuideDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
