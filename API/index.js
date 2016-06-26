@@ -73,7 +73,7 @@ class GuiaController {
                         (err, translation) => {
                             if (err) console.log(err)
                             else {
-                                const texto = translation.translations[0].translation;
+                                const texto = (translation.translations[0] || 0).translation;
                                 console.log('texto', texto);
 
                                 tone_analyzer.tone({ text: texto },
@@ -82,11 +82,12 @@ class GuiaController {
                                             console.log(err);
                                         else {
 
-                                            var tones = tone.tone_categories[0].tones;
-                                            var tone = tones.filter((filt) => {
-                                                return filt.tone_id === "joy";
-                                            });
-                                            return tone.score;
+                                            // var tones = (tone.tone_categories[0] || 0).tones || [];
+                                            // var tone = tones.filter((filt) => {
+                                            //     return filt.tone_id === "joy";
+                                            // });
+                                            // return tone.score;
+                                            return texto;
                                         }
                                     });
                             }
@@ -132,7 +133,7 @@ class UsuarioController {
 }
 
 router.get('/usuarios', new UsuarioController().cadastrar);
-router.get('/guias', new GuiaController().cadastrar);
+router.get('/guias', new GuiaController().listar);
 
 app.use('/', router);
 app.use(bodyParser.json());
