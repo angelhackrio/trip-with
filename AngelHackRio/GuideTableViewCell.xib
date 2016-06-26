@@ -45,6 +45,7 @@
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
+                <outlet property="graphicView" destination="1G1-kA-zvv" id="dF8-Qq-kiE"/>
                 <outlet property="nameLabel" destination="7u5-cH-HoM" id="4Uz-qn-bCx"/>
                 <outlet property="photoImageView" destination="JZf-Oh-EvN" id="wn1-6w-KeP"/>
                 <outlet property="placeLabel" destination="o7K-qc-6SP" id="iKO-cj-Mzq"/>

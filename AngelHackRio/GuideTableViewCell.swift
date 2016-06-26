@@ -12,8 +12,8 @@ class GuideTableViewCell: UITableViewCell {
 
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var cellImageView: UIImageView!
     @IBOutlet weak var placeLabel: UILabel!
+    @IBOutlet weak var graphicView: GraphicView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

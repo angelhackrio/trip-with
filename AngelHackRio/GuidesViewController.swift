@@ -34,6 +34,7 @@ class GuidesViewController: UIViewController {
         let guide = self.guidesArray[indexPath.section]
         vc?.guide = guide
         vc?.photoImage = (self.tableView.cellForRow(at: indexPath) as! GuideTableViewCell).photoImageView.image
+        vc?.topImage = (self.tableView.cellForRow(at: indexPath) as! GuideTableViewCell).graphicView.backgroundImage
     }
     
     @IBAction func backButtonPressed(_ sender: UIButton) {
@@ -65,14 +66,14 @@ extension GuidesViewController: UITableViewDataSource {
                 })
             }
         }
-//        APIClient.image(url: guide.backgroundPhoto!) { (success, image) in
-//            if success {
-//                DispatchQueue.main.sync(execute: {
-//                    cell?.cellImageView.image = image
-//                    cell?.cellImageView.setNeedsDisplay()
-//                })
-//            }
-//        }
+        APIClient.image(url: guide.backgroundPhoto!) { (success, image) in
+            if success {
+                DispatchQueue.main.sync(execute: {
+                    cell?.graphicView.backgroundImage = image
+                    cell?.graphicView.setNeedsDisplay()
+                })
+            }
+        }
         return cell!
     }
 }

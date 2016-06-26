@@ -18,6 +18,7 @@ class GuideDetailViewController: UIViewController {
     var fieldsArray: [String] = []
     @IBOutlet weak var tableView: UITableView!
     var photoImage: UIImage?
+    var topImage: UIImage?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +47,7 @@ class GuideDetailViewController: UIViewController {
 //        self.topImageView.image = guide.backgroundImage
         self.titleLabel.text = guide?.name!
         self.photoImageView.image = photoImage
+        self.topImageView.image = topImage
     }
     
     @IBAction func backButtonPressed(_ sender: UIButton) {
