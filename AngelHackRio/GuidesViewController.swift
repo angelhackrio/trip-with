@@ -83,6 +83,7 @@ extension GuidesViewController: UITableViewDataSource {
                 })
             }
         }
+        cell?.starValueLabel.text = "\(guide.stars!)"
         return cell!
     }
 }
