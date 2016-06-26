@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class APIClient {
 
@@ -24,13 +25,27 @@ class APIClient {
         }
     }
     
-    func guides() {
-        let url = "https://api.cartolafc.globo.com/mercado/status"
+    func guides(completionHandler: (success: Bool, guidesArray: [Guide]?) -> ()) {
+        let url = "https://hackabluemix.azurewebsites.net/api/Guia/"
         let request = clientURLRequest(path: url)
         get(request: request) { (success, data) in
             if success {
-                print(data)
+                do {
+                    let json = try JSONSerialization.jsonObject(with: data as Data, options: JSONSerialization.ReadingOptions.allowFragments)
+                    let guidesArray = Guide.modelsFromDictionaryArray(array: json as! NSArray)
+                    completionHandler(success: true, guidesArray: guidesArray)
+                }
+                catch {
+                }
             }
+        }
+    }
+    
+    class func image(url: String, completionHandler: (success: Bool, image: UIImage) -> ()) {
+        let request = self.sharedInstance.clientURLRequest(path: url)
+        self.sharedInstance.get(request: request) { (success, data) in
+            let image = UIImage(data: data as Data)
+            completionHandler(success: true, image: image!)
         }
     }
 }

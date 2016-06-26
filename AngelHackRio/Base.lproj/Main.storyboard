@@ -5,6 +5,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Claudia.otf">
+            <string>Claudia</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--Intro View Controller-->
         <scene sceneID="O21-fq-80V">
@@ -18,24 +23,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Phg-WQ-sYM">
-                                <frame key="frameInset" minX="104" minY="307" width="112" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Phg-WQ-sYM">
+                                <frame key="frameInset" minX="35" minY="345" width="250" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="CreateAccount"/>
+                                <state key="normal" title="CreateAccount" image="image-login"/>
                                 <connections>
                                     <action selector="createAccountButtonPressed:" destination="yhf-EY-hPA" eventType="touchUpInside" id="Qh2-F2-5jD"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NU0-3W-Amu">
-                                <frame key="frameInset" minX="127" minY="269" width="67" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NU0-3W-Amu">
+                                <frame key="frameInset" minX="35" minY="388" width="250" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Facebook"/>
+                                <state key="normal" title="Facebook" image="image-facebook"/>
                                 <connections>
                                     <action selector="facebookButtonPressed:" destination="yhf-EY-hPA" eventType="touchUpInside" id="cz1-2u-TS1"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image-world" translatesAutoresizingMaskIntoConstraints="NO" id="7SZ-FB-PKe">
+                                <frame key="frameInset" minX="85" minY="28" width="150" height="135"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXX-mS-sKz">
+                                <frame key="frameInset" minX="108" minY="431" width="105" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Create account">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.13725490196078433" green="0.77254901960784317" blue="0.69803921568627447" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="bJk-Kw-atT"/>
                     <connections>
@@ -44,7 +60,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rnl-9Q-SUf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-613" y="99"/>
+            <point key="canvasLocation" x="-613.125" y="98.239436619718305"/>
         </scene>
         <!--Signup View Controller-->
         <scene sceneID="J5i-gB-Gz0">
@@ -85,13 +101,24 @@
                                 <color key="textColor" red="0.92549019607843142" green="0.49803921568627452" blue="0.38431372549019605" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SQ7-Rp-Nyp">
+                                <frame key="frameInset" minX="258" minY="20" width="46" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.92156862750000001" green="0.4941176471" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="Oqd-Vg-Jtf" eventType="touchUpInside" id="RxA-Up-geW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="photoImageView" destination="HXw-IU-6Jh" id="goS-Ej-olK"/>
-                        <outlet property="tableView" destination="hfk-4u-MeY" id="htq-Iz-oEQ"/>
-                        <outlet property="topImageView" destination="gFr-fa-IzN" id="Y75-cy-3Qq"/>
+                        <outlet property="photoImageView" destination="HXw-IU-6Jh" id="K2X-YI-JuH"/>
+                        <outlet property="tableView" destination="hfk-4u-MeY" id="KF0-9r-mLV"/>
+                        <outlet property="topImageView" destination="gFr-fa-IzN" id="I3D-Rg-C2r"/>
                         <segue destination="Shk-ei-oY2" kind="show" identifier="toGuideVC" id="z8G-Z7-9st"/>
                     </connections>
                 </viewController>
@@ -112,17 +139,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="200" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="bf8-FT-YKe">
-                                <frame key="frameInset" width="320" height="568"/>
+                                <frame key="frameInset" minY="66" width="320" height="502"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TravelWith" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evZ-qQ-BDh">
+                                <frame key="frameInset" minX="16" minY="28" width="288" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Claudia" family="Claudia" pointSize="35"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="bf8-FT-YKe" id="5y6-bo-OMs"/>
-                        <segue destination="fSZ-by-W3b" kind="show" id="8z3-ue-FRL"/>
-                        <segue destination="mHL-PW-yXy" kind="show" identifier="toTourVC" id="Tgb-lV-tvf"/>
+                        <segue destination="fSZ-by-W3b" kind="show" identifier="toGuidesDetailVC" id="8z3-ue-FRL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wRD-tU-1Ux" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -140,9 +173,51 @@
                     <view key="view" contentMode="scaleToFill" id="5UQ-1G-NS2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image-topplaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="e67-sm-Z6w">
+                                <frame key="frameInset" width="320" height="213"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="kPj-Gi-2NA">
+                                <frame key="frameInset" minX="115" minY="40" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kristina Romanova" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q1b-RA-NrD">
+                                <frame key="frameInset" minX="83" minY="138" width="154" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20 anos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oKL-QH-AFz">
+                                <frame key="frameInset" minX="127" minY="157" width="66" height="13"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OQG-rT-LIh">
+                                <frame key="frameInset" minY="264" width="320" height="304"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKK-uc-QdL">
+                                <frame key="frameInset" minX="45" minY="221" width="231" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="image-request"/>
+                                <connections>
+                                    <action selector="requestButtonPressed:" destination="fSZ-by-W3b" eventType="touchUpInside" id="2gP-rr-GL6"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="ageLabel" destination="oKL-QH-AFz" id="1lQ-o5-KPB"/>
+                        <outlet property="photoImageView" destination="kPj-Gi-2NA" id="iJL-Cp-gmN"/>
+                        <outlet property="tableView" destination="OQG-rT-LIh" id="xw0-Ye-orI"/>
+                        <outlet property="titleLabel" destination="Q1b-RA-NrD" id="nWI-x6-dv1"/>
+                        <outlet property="topImageView" destination="e67-sm-Z6w" id="pQU-JC-D5z"/>
                         <segue destination="mHL-PW-yXy" kind="show" identifier="toTourVC" id="7D6-BN-51x"/>
                     </connections>
                 </viewController>
@@ -199,10 +274,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="image-facebook" width="531" height="84"/>
+        <image name="image-login" width="531" height="84"/>
         <image name="image-placeholder" width="302" height="302"/>
+        <image name="image-request" width="231" height="35"/>
         <image name="image-topplaceholder" width="800" height="530"/>
+        <image name="image-world" width="175" height="157"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="Tgb-lV-tvf"/>
-    </inferredMetricsTieBreakers>
 </document>

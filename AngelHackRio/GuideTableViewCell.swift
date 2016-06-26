@@ -12,8 +12,13 @@ class GuideTableViewCell: UITableViewCell {
 
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var cellImageView: UIImageView!
+    @IBOutlet weak var placeLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.photoImageView.layer.cornerRadius = self.photoImageView.frame.size.height/2.0
+        self.photoImageView.clipsToBounds = true
+        self.photoImageView.setNeedsDisplay()
     }
 }

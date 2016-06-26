@@ -12,15 +12,24 @@
 		A21833B41D1F2D890019AAC3 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21833B31D1F2D890019AAC3 /* APIClient.swift */; };
 		A21833B61D1F2FF70019AAC3 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21833B51D1F2FF70019AAC3 /* IntroViewController.swift */; };
 		A24476501D1F480D0041FA65 /* TourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A244764F1D1F480D0041FA65 /* TourViewController.swift */; };
+		A24A14291D1FADAF00C11ADC /* Claudia.otf in Resources */ = {isa = PBXBuildFile; fileRef = A24A14281D1FADAF00C11ADC /* Claudia.otf */; };
 		A24A91531D1F0A9200636000 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24A91521D1F0A9200636000 /* AppDelegate.swift */; };
 		A24A91581D1F0A9200636000 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A24A91561D1F0A9200636000 /* Main.storyboard */; };
 		A24A915A1D1F0A9200636000 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A24A91591D1F0A9200636000 /* Assets.xcassets */; };
 		A24A915D1D1F0A9200636000 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A24A915B1D1F0A9200636000 /* LaunchScreen.storyboard */; };
 		A24A91661D1F0B4900636000 /* GuidesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24A91651D1F0B4900636000 /* GuidesViewController.swift */; };
-		A2DEDA1B1D1F50180093365F /* SignupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DEDA1A1D1F50180093365F /* SignupTableViewCell.swift */; };
-		A2DEDA1D1D1F50540093365F /* SignupTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2DEDA1C1D1F50540093365F /* SignupTableViewCell.xib */; };
+		A2989E7F1D1F8B4A00B07EA4 /* Guide.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989E7C1D1F8B4A00B07EA4 /* Guide.swift */; };
+		A2989E801D1F8B4A00B07EA4 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989E7D1D1F8B4A00B07EA4 /* Place.swift */; };
+		A2989E811D1F8B4A00B07EA4 /* Recommendations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989E7E1D1F8B4A00B07EA4 /* Recommendations.swift */; };
+		A2989E831D1F967100B07EA4 /* GraphicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989E821D1F967100B07EA4 /* GraphicView.swift */; };
+		A2DEDA1B1D1F50180093365F /* SignupIconTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DEDA1A1D1F50180093365F /* SignupIconTableViewCell.swift */; };
+		A2DEDA1D1D1F50540093365F /* SignupIconTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2DEDA1C1D1F50540093365F /* SignupIconTableViewCell.xib */; };
 		A2DEDA1F1D1F52460093365F /* SignupFields.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2DEDA1E1D1F52460093365F /* SignupFields.plist */; };
 		A2DEDA211D1F55EA0093365F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DEDA201D1F55EA0093365F /* User.swift */; };
+		A2DEDA231D1F62B20093365F /* SignupLabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DEDA221D1F62B20093365F /* SignupLabelTableViewCell.swift */; };
+		A2DEDA251D1F62BD0093365F /* SignupLabelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2DEDA241D1F62BD0093365F /* SignupLabelTableViewCell.xib */; };
+		A2DEDA271D1F64720093365F /* SignupTextViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DEDA261D1F64720093365F /* SignupTextViewTableViewCell.swift */; };
+		A2DEDA291D1F64820093365F /* SignupTextViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2DEDA281D1F64820093365F /* SignupTextViewTableViewCell.xib */; };
 		A2F6EB991D1F419F008A69E9 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F6EB981D1F419F008A69E9 /* SignupViewController.swift */; };
 		A2F6EB9B1D1F42C8008A69E9 /* GuideDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F6EB9A1D1F42C8008A69E9 /* GuideDetailViewController.swift */; };
 /* End PBXBuildFile section */
@@ -31,6 +40,7 @@
 		A21833B31D1F2D890019AAC3 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		A21833B51D1F2FF70019AAC3 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		A244764F1D1F480D0041FA65 /* TourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TourViewController.swift; sourceTree = "<group>"; };
+		A24A14281D1FADAF00C11ADC /* Claudia.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Claudia.otf; sourceTree = "<group>"; };
 		A24A914F1D1F0A9200636000 /* AngelHackRio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AngelHackRio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A24A91521D1F0A9200636000 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A24A91571D1F0A9200636000 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -38,10 +48,18 @@
 		A24A915C1D1F0A9200636000 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A24A915E1D1F0A9200636000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A24A91651D1F0B4900636000 /* GuidesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuidesViewController.swift; sourceTree = "<group>"; };
-		A2DEDA1A1D1F50180093365F /* SignupTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupTableViewCell.swift; sourceTree = "<group>"; };
-		A2DEDA1C1D1F50540093365F /* SignupTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignupTableViewCell.xib; sourceTree = "<group>"; };
+		A2989E7C1D1F8B4A00B07EA4 /* Guide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Guide.swift; sourceTree = "<group>"; };
+		A2989E7D1D1F8B4A00B07EA4 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		A2989E7E1D1F8B4A00B07EA4 /* Recommendations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recommendations.swift; sourceTree = "<group>"; };
+		A2989E821D1F967100B07EA4 /* GraphicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphicView.swift; sourceTree = "<group>"; };
+		A2DEDA1A1D1F50180093365F /* SignupIconTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupIconTableViewCell.swift; sourceTree = "<group>"; };
+		A2DEDA1C1D1F50540093365F /* SignupIconTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignupIconTableViewCell.xib; sourceTree = "<group>"; };
 		A2DEDA1E1D1F52460093365F /* SignupFields.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SignupFields.plist; sourceTree = "<group>"; };
 		A2DEDA201D1F55EA0093365F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A2DEDA221D1F62B20093365F /* SignupLabelTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupLabelTableViewCell.swift; sourceTree = "<group>"; };
+		A2DEDA241D1F62BD0093365F /* SignupLabelTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignupLabelTableViewCell.xib; sourceTree = "<group>"; };
+		A2DEDA261D1F64720093365F /* SignupTextViewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupTextViewTableViewCell.swift; sourceTree = "<group>"; };
+		A2DEDA281D1F64820093365F /* SignupTextViewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignupTextViewTableViewCell.xib; sourceTree = "<group>"; };
 		A2F6EB981D1F419F008A69E9 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		A2F6EB9A1D1F42C8008A69E9 /* GuideDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				A21833AE1D1F1A270019AAC3 /* Reusable Cells */,
+				A2989E821D1F967100B07EA4 /* GraphicView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -82,6 +101,9 @@
 			children = (
 				A21833B31D1F2D890019AAC3 /* APIClient.swift */,
 				A2DEDA201D1F55EA0093365F /* User.swift */,
+				A2989E7C1D1F8B4A00B07EA4 /* Guide.swift */,
+				A2989E7D1D1F8B4A00B07EA4 /* Place.swift */,
+				A2989E7E1D1F8B4A00B07EA4 /* Recommendations.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -89,10 +111,14 @@
 		A21833AE1D1F1A270019AAC3 /* Reusable Cells */ = {
 			isa = PBXGroup;
 			children = (
-				A21833AF1D1F1A7D0019AAC3 /* GuideTableViewCell.swift */,
 				A21833B11D1F1A9A0019AAC3 /* GuideTableViewCell.xib */,
-				A2DEDA1A1D1F50180093365F /* SignupTableViewCell.swift */,
-				A2DEDA1C1D1F50540093365F /* SignupTableViewCell.xib */,
+				A21833AF1D1F1A7D0019AAC3 /* GuideTableViewCell.swift */,
+				A2DEDA1C1D1F50540093365F /* SignupIconTableViewCell.xib */,
+				A2DEDA1A1D1F50180093365F /* SignupIconTableViewCell.swift */,
+				A2DEDA241D1F62BD0093365F /* SignupLabelTableViewCell.xib */,
+				A2DEDA221D1F62B20093365F /* SignupLabelTableViewCell.swift */,
+				A2DEDA281D1F64820093365F /* SignupTextViewTableViewCell.xib */,
+				A2DEDA261D1F64720093365F /* SignupTextViewTableViewCell.swift */,
 			);
 			name = "Reusable Cells";
 			sourceTree = "<group>";
@@ -128,6 +154,7 @@
 		A24A91641D1F0AA300636000 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A24A14281D1FADAF00C11ADC /* Claudia.otf */,
 				A24A91521D1F0A9200636000 /* AppDelegate.swift */,
 				A24A91591D1F0A9200636000 /* Assets.xcassets */,
 				A24A915B1D1F0A9200636000 /* LaunchScreen.storyboard */,
@@ -198,10 +225,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A24A14291D1FADAF00C11ADC /* Claudia.otf in Resources */,
+				A2DEDA251D1F62BD0093365F /* SignupLabelTableViewCell.xib in Resources */,
 				A21833B21D1F1A9A0019AAC3 /* GuideTableViewCell.xib in Resources */,
-				A2DEDA1D1D1F50540093365F /* SignupTableViewCell.xib in Resources */,
+				A2DEDA1D1D1F50540093365F /* SignupIconTableViewCell.xib in Resources */,
 				A24A915D1D1F0A9200636000 /* LaunchScreen.storyboard in Resources */,
 				A24A915A1D1F0A9200636000 /* Assets.xcassets in Resources */,
+				A2DEDA291D1F64820093365F /* SignupTextViewTableViewCell.xib in Resources */,
 				A24A91581D1F0A9200636000 /* Main.storyboard in Resources */,
 				A2DEDA1F1D1F52460093365F /* SignupFields.plist in Resources */,
 			);
@@ -218,10 +248,16 @@
 				A24A91661D1F0B4900636000 /* GuidesViewController.swift in Sources */,
 				A24A91531D1F0A9200636000 /* AppDelegate.swift in Sources */,
 				A21833B01D1F1A7D0019AAC3 /* GuideTableViewCell.swift in Sources */,
-				A2DEDA1B1D1F50180093365F /* SignupTableViewCell.swift in Sources */,
+				A2989E811D1F8B4A00B07EA4 /* Recommendations.swift in Sources */,
+				A2989E831D1F967100B07EA4 /* GraphicView.swift in Sources */,
+				A2DEDA1B1D1F50180093365F /* SignupIconTableViewCell.swift in Sources */,
+				A2989E801D1F8B4A00B07EA4 /* Place.swift in Sources */,
 				A24476501D1F480D0041FA65 /* TourViewController.swift in Sources */,
+				A2DEDA231D1F62B20093365F /* SignupLabelTableViewCell.swift in Sources */,
+				A2989E7F1D1F8B4A00B07EA4 /* Guide.swift in Sources */,
 				A21833B61D1F2FF70019AAC3 /* IntroViewController.swift in Sources */,
 				A21833B41D1F2D890019AAC3 /* APIClient.swift in Sources */,
+				A2DEDA271D1F64720093365F /* SignupTextViewTableViewCell.swift in Sources */,
 				A2DEDA211D1F55EA0093365F /* User.swift in Sources */,
 				A2F6EB9B1D1F42C8008A69E9 /* GuideDetailViewController.swift in Sources */,
 			);

@@ -18,12 +18,12 @@ class IntroViewController: UIViewController {
     }
     
     @IBAction func facebookButtonPressed(_ sender: UIButton) {
-        APIClient.sharedInstance.login { (success) in
-            if success {
-                DispatchQueue.main.sync(execute: { 
-                    self.performSegue(withIdentifier: "toSignupVC", sender: self)
-                })
-            }
-        }
+        self.performSegue(withIdentifier: "toSignupVC", sender: self)
+//        APIClient.sharedInstance.login { (success) in
+//            if success {
+//                DispatchQueue.main.sync(execute: { 
+//                })
+//            }
+//        }
     }
 }

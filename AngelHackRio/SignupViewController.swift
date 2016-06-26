@@ -19,7 +19,9 @@ class SignupViewController: UIViewController {
         super.viewDidLoad()
         self.tableView.dataSource = self
         self.tableView.delegate = self
-        self.tableView.register(UINib(nibName: "SignupTableViewCell", bundle: nil), forCellReuseIdentifier: "Cell")
+        self.tableView.register(UINib(nibName: "SignupIconTableViewCell", bundle: nil), forCellReuseIdentifier: "CellIcon")
+        self.tableView.register(UINib(nibName: "SignupLabelTableViewCell", bundle: nil), forCellReuseIdentifier: "CellLabel")
+        self.tableView.register(UINib(nibName: "SignupTextViewTableViewCell", bundle: nil), forCellReuseIdentifier: "CellTextView")
         let path = Bundle.main().pathForResource("SignupFields", ofType: "plist")
         self.signupFieldsArray = NSArray(contentsOfFile: path!) as! [String]
         self.tableView.tableFooterView = UIView()
@@ -37,6 +39,10 @@ class SignupViewController: UIViewController {
         self.topImageView.addSubview(filterView)
         self.topImageView.setNeedsDisplay()
     }
+    
+    @IBAction func nextButtonPressed(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "toGuideVC", sender: nil)
+    }
 }
 
 
@@ -51,39 +57,37 @@ extension SignupViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! SignupTableViewCell
+        var reuseIdentifier = ""
         let field = signupFieldsArray[indexPath.row]
-        let typeImage: UIImage? = UIImage(named: field)
-        if typeImage == nil {
-            let typeLabel = UILabel(frame: CGRect(x: 5, y: 6, width: 100, height: 30))
-            typeLabel.text = field
-            cell.addSubview(typeLabel)
-        }
-        else {
-            cell.typeImageView.image = typeImage
-        }
         let value = User.sharedInstance.value(forKey: field.lowercased())
-        switch value {
-        case is Int:
-            let textField = UITextField(frame: CGRect(x: 50, y: 6, width: 175, height: 30))
-            textField.text = "\(value as! Int) years old"
-            cell.addSubview(textField)
-        case is String:
-            let textField = UITextField(frame: CGRect(x: 50, y: 6, width: 175, height: 30))
-            textField.text = (value as! String)
-            cell.addSubview(textField)
-        case is [String]:
-            let textField = UITextField(frame: CGRect(x: 50, y: 6, width: 260, height: 30))
+        switch indexPath.row {
+        case 0:
+            reuseIdentifier = "CellIcon"
+            let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as? SignupIconTableViewCell
+            let typeImage: UIImage? = UIImage(named: field)
+            cell?.typeImageView.image = typeImage
+            cell?.inputTextField.text = value as? String
+            return cell!
+        case 1:
+            reuseIdentifier = "CellIcon"
+            let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as? SignupIconTableViewCell
+            let typeImage: UIImage? = UIImage(named: field)
+            cell?.typeImageView.image = typeImage
             var valueText = ""
             for element in value as! [String] {
                 valueText = valueText + "\(element),"
             }
-            textField.text = valueText
-            cell.addSubview(textField)
+            cell?.inputTextField.text = valueText
+            return cell!
+        case 2:
+            reuseIdentifier = "CellTextView"
+            let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as? SignupTextViewTableViewCell
+            cell?.titleLabel.text = field
+            cell?.inputTextView.text = value as? String
+            return cell!
         default:
-            break
+            return UITableViewCell()
         }
-        return cell
     }
 }
 
@@ -92,16 +96,13 @@ extension SignupViewController: UITableViewDataSource {
 extension SignupViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if indexPath.row == 2 {
-            return 85
-        }
-        else {
+        switch indexPath.row {
+        case 0,1:
             return 44
+        case 2:
+            return 130
+        default:
+            return 0
         }
     }
-    
-//    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-//        return 20
-//        
-//    }
 }

@@ -15,5 +15,5 @@ class User: NSObject {
     let age: Int = 20
     let place: String = "Sao Paulo/SP"
     let languages: [String]  = ["Portuguese", "English", "Spanish"]
-    let about: String = "Sobre mim"
+    let about: String = "Fashion model based out of New York who has walked runways in notable brands like Marc Jacobs, DKNY, Ralph Lauren, DSquared2, Jean Paul Gaultier and numerous others."
 }
