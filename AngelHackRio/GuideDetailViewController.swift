@@ -17,6 +17,7 @@ class GuideDetailViewController: UIViewController {
     var guide: Guide?
     var fieldsArray: [String] = []
     @IBOutlet weak var tableView: UITableView!
+    var photoImage: UIImage?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,7 +43,13 @@ class GuideDetailViewController: UIViewController {
         filterView.backgroundColor = UIColor(colorLiteralRed: 132/255.0, green: 220/255.0, blue: 244/255.0, alpha: 0.3)
         self.topImageView.addSubview(filterView)
         self.topImageView.setNeedsDisplay()
+//        self.topImageView.image = guide.backgroundImage
         self.titleLabel.text = guide?.name!
+        self.photoImageView.image = photoImage
+    }
+    
+    @IBAction func backButtonPressed(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func requestButtonPressed(_ sender: UIButton) {
@@ -82,7 +89,7 @@ extension GuideDetailViewController: UITableViewDataSource {
 //            for element in (guide?.language)! {
 //                valueText = valueText + "\(element),"
 //            }
-//            cell?.inputTextField.text = valueText
+            cell?.inputTextField.text = "Portuguese and English"
             return cell!
         case 2:
             reuseIdentifier = "CellTextView"

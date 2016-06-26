@@ -30,7 +30,14 @@ class GuidesViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
         let vc = segue.destinationViewController as? GuideDetailViewController
-        vc?.guide = self.guidesArray[sender as! Int]
+        let indexPath = sender as! IndexPath
+        let guide = self.guidesArray[indexPath.section]
+        vc?.guide = guide
+        vc?.photoImage = (self.tableView.cellForRow(at: indexPath) as! GuideTableViewCell).photoImageView.image
+    }
+    
+    @IBAction func backButtonPressed(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
     }
 }
 
@@ -58,6 +65,14 @@ extension GuidesViewController: UITableViewDataSource {
                 })
             }
         }
+//        APIClient.image(url: guide.backgroundPhoto!) { (success, image) in
+//            if success {
+//                DispatchQueue.main.sync(execute: {
+//                    cell?.cellImageView.image = image
+//                    cell?.cellImageView.setNeedsDisplay()
+//                })
+//            }
+//        }
         return cell!
     }
 }
@@ -66,7 +81,7 @@ extension GuidesViewController: UITableViewDataSource {
 
 extension GuidesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.performSegue(withIdentifier: "toGuidesDetailVC", sender: indexPath.section)
+        self.performSegue(withIdentifier: "toGuidesDetailVC", sender: indexPath)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

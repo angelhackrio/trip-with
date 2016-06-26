@@ -4,6 +4,7 @@ public class Guide {
 	public var id : Int?
 	public var name : String?
 	public var photoURL : String?
+    public var backgroundPhoto : String?
 	public var language : Array<String>?
 	public var place : Place?
 	public var stars : Int?
@@ -47,6 +48,7 @@ public class Guide {
 		id = dictionary["id"] as? Int
 		name = dictionary["name"] as? String
 		photoURL = dictionary["photoURL"] as? String
+        backgroundPhoto = dictionary["backgroundPhoto"] as? String
 //		if (dictionary["language"] != nil) { language = Language.modelsFromDictionaryArray(array: dictionary["language"] as! NSArray) }
 		if (dictionary["place"] != nil) { place = Place(dictionary: dictionary["place"] as! NSDictionary) }
 		stars = dictionary["stars"] as? Int
@@ -69,6 +71,7 @@ public class Guide {
 		dictionary.setValue(self.id, forKey: "id")
 		dictionary.setValue(self.name, forKey: "name")
 		dictionary.setValue(self.photoURL, forKey: "photoURL")
+        dictionary.setValue(self.backgroundPhoto, forKey: "backgroundPhoto")
 		dictionary.setValue(self.place?.dictionaryRepresentation(), forKey: "place")
 		dictionary.setValue(self.stars, forKey: "stars")
 		dictionary.setValue(self.about, forKey: "about")

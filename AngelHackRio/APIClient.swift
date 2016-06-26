@@ -26,7 +26,7 @@ class APIClient {
     }
     
     func guides(completionHandler: (success: Bool, guidesArray: [Guide]?) -> ()) {
-        let url = "https://hackabluemix.azurewebsites.net/api/Guia/"
+        let url = "https://jeanlindo.herokuapp.com/guias"
         let request = clientURLRequest(path: url)
         get(request: request) { (success, data) in
             if success {
