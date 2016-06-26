@@ -25,6 +25,9 @@
 		A2C00E961D200773002E4F5A /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C00E951D200773002E4F5A /* RootTabBarController.swift */; };
 		A2C00E981D20150A002E4F5A /* GuideVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A2C00E971D20150A002E4F5A /* GuideVideo.mp4 */; };
 		A2C00E9A1D201645002E4F5A /* GuideMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C00E991D201645002E4F5A /* GuideMovieViewController.swift */; };
+		A2C00E9C1D201AC8002E4F5A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C00E9B1D201AC8002E4F5A /* ProfileViewController.swift */; };
+		A2C00E9E1D201DA4002E4F5A /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C00E9D1D201DA4002E4F5A /* TagView.swift */; };
+		A2C00EA01D2022C7002E4F5A /* TagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C00E9F1D2022C7002E4F5A /* TagViewController.swift */; };
 		A2DEDA1B1D1F50180093365F /* SignupIconTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DEDA1A1D1F50180093365F /* SignupIconTableViewCell.swift */; };
 		A2DEDA1D1D1F50540093365F /* SignupIconTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2DEDA1C1D1F50540093365F /* SignupIconTableViewCell.xib */; };
 		A2DEDA1F1D1F52460093365F /* SignupFields.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2DEDA1E1D1F52460093365F /* SignupFields.plist */; };
@@ -58,6 +61,9 @@
 		A2C00E951D200773002E4F5A /* RootTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
 		A2C00E971D20150A002E4F5A /* GuideVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = GuideVideo.mp4; sourceTree = "<group>"; };
 		A2C00E991D201645002E4F5A /* GuideMovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideMovieViewController.swift; sourceTree = "<group>"; };
+		A2C00E9B1D201AC8002E4F5A /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A2C00E9D1D201DA4002E4F5A /* TagView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
+		A2C00E9F1D2022C7002E4F5A /* TagViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagViewController.swift; sourceTree = "<group>"; };
 		A2DEDA1A1D1F50180093365F /* SignupIconTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupIconTableViewCell.swift; sourceTree = "<group>"; };
 		A2DEDA1C1D1F50540093365F /* SignupIconTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignupIconTableViewCell.xib; sourceTree = "<group>"; };
 		A2DEDA1E1D1F52460093365F /* SignupFields.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SignupFields.plist; sourceTree = "<group>"; };
@@ -91,6 +97,8 @@
 				A244764F1D1F480D0041FA65 /* TourViewController.swift */,
 				A2C00E951D200773002E4F5A /* RootTabBarController.swift */,
 				A2C00E991D201645002E4F5A /* GuideMovieViewController.swift */,
+				A2C00E9B1D201AC8002E4F5A /* ProfileViewController.swift */,
+				A2C00E9F1D2022C7002E4F5A /* TagViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -100,6 +108,7 @@
 			children = (
 				A21833AE1D1F1A270019AAC3 /* Reusable Cells */,
 				A2989E821D1F967100B07EA4 /* GraphicView.swift */,
+				A2C00E9D1D201DA4002E4F5A /* TagView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -260,10 +269,13 @@
 				A21833B01D1F1A7D0019AAC3 /* GuideTableViewCell.swift in Sources */,
 				A2989E811D1F8B4A00B07EA4 /* Recommendations.swift in Sources */,
 				A2C00E961D200773002E4F5A /* RootTabBarController.swift in Sources */,
+				A2C00EA01D2022C7002E4F5A /* TagViewController.swift in Sources */,
 				A2989E831D1F967100B07EA4 /* GraphicView.swift in Sources */,
 				A2DEDA1B1D1F50180093365F /* SignupIconTableViewCell.swift in Sources */,
 				A2989E801D1F8B4A00B07EA4 /* Place.swift in Sources */,
+				A2C00E9C1D201AC8002E4F5A /* ProfileViewController.swift in Sources */,
 				A24476501D1F480D0041FA65 /* TourViewController.swift in Sources */,
+				A2C00E9E1D201DA4002E4F5A /* TagView.swift in Sources */,
 				A2DEDA231D1F62B20093365F /* SignupLabelTableViewCell.swift in Sources */,
 				A2989E7F1D1F8B4A00B07EA4 /* Guide.swift in Sources */,
 				A2C00E9A1D201645002E4F5A /* GuideMovieViewController.swift in Sources */,
