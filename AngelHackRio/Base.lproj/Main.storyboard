@@ -275,13 +275,22 @@
                     <view key="view" contentMode="scaleToFill" id="3Sd-TS-Q8i">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No new messages" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RsW-4q-FCR">
+                                <frame key="frameInset" minX="71" minY="274" width="178" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Chat" image="icon-speech" selectedImage="icon-speech-filled" id="4wZ-st-re3"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SJ5-sa-CBQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1679" y="780"/>
+            <point key="canvasLocation" x="1678.125" y="779.57746478873241"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="JXO-Eh-qaP">
@@ -326,10 +335,10 @@
             </objects>
             <point key="canvasLocation" x="-1309" y="100"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Root Tab Bar Controller-->
         <scene sceneID="MZB-M0-N2A">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="0kd-do-oID" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="0kd-do-oID" customClass="RootTabBarController" customModule="AngelHackRio" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="XHf-JW-txg">
                         <autoresizingMask key="autoresizingMask"/>
