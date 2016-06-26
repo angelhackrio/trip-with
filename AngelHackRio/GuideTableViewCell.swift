@@ -15,11 +15,17 @@ class GuideTableViewCell: UITableViewCell {
     @IBOutlet weak var placeLabel: UILabel!
     @IBOutlet weak var graphicView: GraphicView!
     @IBOutlet weak var starValueLabel: UILabel!
+    @IBOutlet weak var exploreImageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         self.photoImageView.layer.cornerRadius = self.photoImageView.frame.size.height/2.0
         self.photoImageView.clipsToBounds = true
         self.photoImageView.setNeedsDisplay()
+        let imageIcon = UIImage(named: "icon-world")
+        imageIcon?.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+        self.exploreImageView.image = imageIcon
+        self.exploreImageView.tintColor = UIColor.white()
+
     }
 }
